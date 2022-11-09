@@ -8,7 +8,7 @@ trigger:
 
 pool:
   name: 'default'
-  vmImage: 'winagent'
+  vmImage: 'Hosted Agent'
 
 steps:
 - script: echo Hello, world!
