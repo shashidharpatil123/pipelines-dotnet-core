@@ -25,12 +25,4 @@ steps:
     PathtoPublish: '$(Build.ArtifactStagingDirectory)'
     ArtifactName: 'drop'
     publishLocation: 'Container'
-- task: DownloadBuildArtifacts@0
-  inputs:
-    buildType: 'specific'
-    project: '8fa17101-d4d2-4c8d-b97e-cd2d059bc783'
-    pipeline: '2'
-    buildVersionToDownload: 'latest'
-    downloadType: 'single'
-    artifactName: 'drop'
-    downloadPath: '$(System.ArtifactsDirectory)'
+
