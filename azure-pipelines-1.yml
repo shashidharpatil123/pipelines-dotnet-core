@@ -16,11 +16,7 @@ steps:
 
 
 
-- task: DotNetCoreCLI@2
-  inputs:
-    command: 'build'
-    projects: '**/*.cdproj'
-    arguments: '--configuration$(buildConfiguration)'
+
 - task: DotNetCoreCLI@2
   inputs:
     command: 'publish'
